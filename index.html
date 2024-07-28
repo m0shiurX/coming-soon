@@ -45,47 +45,15 @@
     <div class="flex bg-gradient-to-b from-gray-900/90 to-gray-900/95 p-10 w-full md:w-1/2 min-h-screen">
       <div class="my-auto w-full text-center">
         <h1 class="md:text-right mb-10 font-bold font-Comforter-Brush text-5xl text-amber-500">DogsGuardian</h1>
-        <h6
-          class="md:text-right md:mr-20 mb-14 font-bold font-Montserrat text-4xl text-white md:text-5xl lg:text-6xl uppercase">
-          Coming <span class="md:-mr-20 text-white/70">soon</span></h6>
 
-
-        <!-- Count down -->
-        <div class="flex mb-10 w-full text-left">
-          <ul class="flex place-content-center md:place-content-end gap-5 mx-auto w-full text-gray-50">
-            <li>
-              <div
-                class="flex justify-center items-center border-4 border-gray-700 border-dotted rounded-full w-16 lg:w-24 h-16 lg:h-24 font-bold text-2xl text-white lg:text-4xl"
-                id="cdD">00</div>
-              <p class="mt-2 text-center text-xs">Days</p>
-            </li>
-
-            <li>
-              <div
-                class="flex justify-center items-center border-4 border-gray-700 border-dotted rounded-full w-16 lg:w-24 h-16 lg:h-24 font-bold text-2xl text-white lg:text-4xl"
-                id="cdH">00</div>
-              <p class="mt-2 text-center text-xs">Hours</p>
-            </li>
-
-            <li>
-              <div
-                class="flex justify-center items-center border-4 border-gray-700 border-dotted rounded-full w-16 lg:w-24 h-16 lg:h-24 font-bold text-2xl text-white lg:text-4xl"
-                id="cdM">00</div>
-              <p class="mt-2 text-center text-xs">Minutes</p>
-            </li>
-
-            <li>
-              <div
-                class="flex justify-center items-center border-4 border-gray-700 border-dotted rounded-full w-16 lg:w-24 h-16 lg:h-24 font-bold text-2xl text-white lg:text-4xl"
-                id="cdS">00</div>
-              <p class="mt-2 text-center text-xs">Seconds</p>
-            </li>
-
-          </ul>
-        </div>
 
         <!-- Content -->
-        <p class="md:text-right mb-10 text-base text-gray-200"></p>
+        <p class="md:text-right flex justify-end -mr-20 mb-10 text-base text-gray-200">
+          <script src="https://donorbox.org/widget.js" paypalExpress="false"></script><iframe
+            src="https://donorbox.org/embed/give-orphans-a-home?language=en" name="donorbox"
+            allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameborder="0" scrolling="no" height="900px"
+            width="100%" style="max-width: 500px; min-width: 250px; max-height:none!important" allow="payment"></iframe>
+        </p>
 
         <!-- Social media -->
         <div class="flex w-full text-left">
@@ -120,48 +88,6 @@
       </div>
     </div>
   </header>
-
-  <script>
-    // Change the value of countDownEndDate to the day you want to end the count down
-    var countDownEndDate = "July 15, 2024 09:00:00";
-
-    var endDate = new Date(countDownEndDate).getTime();
-
-    var x = setInterval(function () {
-
-      var timeNow = new Date().getTime();
-
-      var timeLeft = endDate - timeNow;
-
-      var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-      if (days < 10) {
-        days = "0" + days;
-      }
-
-      if (hours < 10) {
-        hours = "0" + hours;
-      }
-
-      if (minutes < 10) {
-        minutes = "0" + minutes;
-      }
-
-      if (seconds < 10) {
-        seconds = "0" + seconds;
-      }
-
-      if (timeLeft > 0) {
-        document.getElementById("cdD").innerHTML = days;
-        document.getElementById("cdH").innerHTML = hours;
-        document.getElementById("cdM").innerHTML = minutes;
-        document.getElementById("cdS").innerHTML = seconds;
-      }
-    }, 1000);
-  </script>
 </body>
 
 </html>
